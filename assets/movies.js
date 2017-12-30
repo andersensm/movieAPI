@@ -14,14 +14,11 @@ $("#inputValid").on("click", function(event) {
     movieInput(movie);
 })
 
-
-
-
 //connect with ajax OMDB server
 
 function movieInput(movie) {
 
-    var queryURL = "http://www.omdbapi.com/?apikey=trilogy&t=" + movie
+    var queryURL = "https://www.omdbapi.com/?apikey=trilogy&t=" + movie
 
     $.ajax({
       url: queryURL,
